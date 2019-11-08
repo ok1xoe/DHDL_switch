@@ -1,0 +1,95 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:RT42xxxx K?
+U 1 1 5DC55DAD
+P 3250 1800
+F 0 "K?" V 4017 1800 50  0000 C CNN
+F 1 "RT42xxxx" V 3926 1800 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm" H 3250 1800 50  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FRT2%7F1014%7Fpdf%7FEnglish%7FENG_DS_RT2_1014.pdf%7F6-1393243-3" H 3900 1950 50  0001 C CNN
+	1    3250 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:RT42xxxx K?
+U 1 1 5DC57547
+P 3200 4150
+F 0 "K?" V 3967 4150 50  0000 C CNN
+F 1 "RT42xxxx" V 3876 4150 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Schrack-RT2-FormC_RM5mm" H 3200 4150 50  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FRT2%7F1014%7Fpdf%7FEnglish%7FENG_DS_RT2_1014.pdf%7F6-1393243-3" H 3850 4300 50  0001 C CNN
+	1    3200 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC588D5
+P 1150 4450
+F 0 "R?" H 1220 4496 50  0000 L CNN
+F 1 "R" H 1220 4405 50  0000 L CNN
+F 2 "" V 1080 4450 50  0001 C CNN
+F 3 "~" H 1150 4450 50  0001 C CNN
+	1    1150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DC61815
+P 2400 2750
+F 0 "J?" H 2500 2725 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2500 2634 50  0000 L CNN
+F 2 "" H 2400 2750 50  0001 C CNN
+F 3 " ~" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DC6275B
+P 1850 2950
+F 0 "J?" H 1950 2925 50  0000 L CNN
+F 1 "Conn_Coaxial" H 1950 2834 50  0000 L CNN
+F 2 "" H 1850 2950 50  0001 C CNN
+F 3 " ~" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DC62F96
+P 1950 2400
+F 0 "J?" H 2050 2375 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2050 2284 50  0000 L CNN
+F 2 "" H 1950 2400 50  0001 C CNN
+F 3 " ~" H 1950 2400 50  0001 C CNN
+	1    1950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1300 1150 1300
+Wire Wire Line
+	1150 1300 1150 3750
+Wire Wire Line
+	2650 3750 1150 3750
+Connection ~ 1150 3750
+Wire Wire Line
+	1150 3750 1150 4300
+Wire Wire Line
+	2650 3750 2650 3650
+Wire Wire Line
+	2650 3650 2900 3650
+$EndSCHEMATC
